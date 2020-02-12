@@ -1,4 +1,4 @@
 up() {
-    docker-compose up -d reverse-proxy
+    docker-compose up -d
 }
 $1
