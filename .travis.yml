@@ -3,6 +3,6 @@ services:
   - docker
 dist: bionic
 script:
-  - ./run.sh up
+  - docker-compose up
   - curl http://whoami.docker.localhost:8001
 
