@@ -4,6 +4,5 @@ services:
 dist: bionic
 script:
   - ./run.sh up
-  - curl -H Host:whoami.docker.localhost http://127.0.0.1
-  - curl http://localhost
+  - curl http://whoami.docker.localhost
 
