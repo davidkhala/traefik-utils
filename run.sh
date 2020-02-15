@@ -1,8 +1,5 @@
-up() {
-    ./traefik --configFile=config/traefik.sample.toml
-}
-cli() {
-    ./traefik --entryPoints.web.address=:8081 --providers.file.filename=config/dynamic_conf.yml
+config() {
+    ./traefik --configFile=config/static_conf.toml
 }
 
 $1

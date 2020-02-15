@@ -1,0 +1,7 @@
+[entryPoints]
+  [entryPoints.web]
+    address = ":8081"
+[api] 
+[providers]
+  [providers.file]
+    directory = "config"

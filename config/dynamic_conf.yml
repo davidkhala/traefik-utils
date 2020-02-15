@@ -1,18 +1,14 @@
 ## dynamic configuration ##
-#  TODO
-entryPoints:
-  web:
-    address: :8081
-api: {}
 
 http:
     routers:
       routerTest:
-        service: srv-grpc
-        rule: Host(`frontend.local`)
+        service: srv-grpc # required
+        # rule is required
+        rule: HostRegexp(`{.*}`) # -> any host
   
     services:
       srv-grpc:
         loadBalancer:
           servers:
-          - url: grpc://localhost:9090
+          - url: h2c://localhost:9090 # using explicit `grpc://` protocol name is not allowed. Error:  Received http2 header with status: 500
