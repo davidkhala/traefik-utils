@@ -1,0 +1,52 @@
+repo_name: davidkhala/traefik-utils
+report_id: 6cac0ee4c80caaa02ae4eb2039801e7c
+repo_type: Public
+timestamp: '2023-11-17T00:45:21+00:00'
+requested_by: davidkhala
+provider: github
+branch: master
+detected_tools_count: 4
+tools:
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: Traefik
+  description: The Cloud Native Edge Router
+  website_url: https://traefik.io/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Load Balancer / Reverse Proxy
+  image_url: https://img.stackshare.io/service/5126/default_0a34be001ec8247c641508aa468564fb386bc50c.png
+  detection_source: docker-compose.yml
+  last_updated_by: david
+  last_updated_on: 2020-02-15 02:31:10.000000000 Z
+- name: Travis CI
+  description: A hosted continuous integration service for open source and private
+    projects
+  website_url: http://travis-ci.com/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png
+  detection_source: ".travis.yml"
+  last_updated_by: david
+  last_updated_on: 2020-02-12 05:39:37.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source: Repo Metadata
